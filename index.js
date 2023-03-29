@@ -3,16 +3,12 @@ const employee = {
     streetAddress: "4358235",
 }
 
-
-
 function updateEmployeeWithKeyAndValue(employee, key, value){
     const newObj = { ...employee }
     newObj[key] = value
     return newObj
 }
-
 updateEmployeeWithKeyAndValue(employee, "sam", "1")
-
 
 function deleteFromEmployeeByKey(employee, key){
     const remEmployee = { ...employee }
